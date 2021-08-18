@@ -1,5 +1,5 @@
-import sklep.produсts
-from sklep.order import total_price
+import Shop.sklep.produсts
+from Shop.sklep.order import total_price
 
 def run_shop():
     total = 0
@@ -9,7 +9,7 @@ def run_shop():
             print('Thanks for shopping =)')
             break
 
-        if product not in sklep.produсts.amount_products:
+        if product not in Shop.sklep.produсts.amount_products:
             print('Product is out of stock!')
             continue
 
